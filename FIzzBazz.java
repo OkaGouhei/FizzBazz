@@ -1,12 +1,22 @@
-import java.io.Console;
+import java.util.Scanner;
 
-public class Test1{
-     public static void main(String[] args) {
-        // int a = 1;
-        int i = 4;
-        if ( i++ ==5 || i++ < 5 ) {
-        System.out.println("表示");
+public class FizzBazz{
+   public static void main(String[] args) {
+      System.out.println("数字を入力して下さい。");
+      Scanner scan = new Scanner(System.in);
+      int number =scan.nextInt();
+      for(int i = 1; i <= number ; i++){
+        if (i % 3 ==0 && i % 5 ==0){
+          System.out.println("FizzBuzz");
+        } else if(i % 3 == 0){
+          System.out.println("Fizz");
         }
-        System.out.println(i);
+         else if(i % 5 == 0){
+          System.out.println("Buzz");
+        }
+        else {
+          System.out.println(i);
+        }
       }
+    }
 }
