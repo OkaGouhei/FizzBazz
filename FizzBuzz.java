@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FizzBazz{
+public class FizzBuzz{
    public static void main(String[] args) {
       System.out.println("数字を入力して下さい。");
       Scanner scan = new Scanner(System.in);
